@@ -76,7 +76,7 @@ sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 ## Update Flatpak 
 * `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
 * `flatpak update`
-* [ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo ]
+* `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
 ## Gnome Extensions
 * Don't install these if you are using a different spin of Fedora.
