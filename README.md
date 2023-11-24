@@ -169,7 +169,7 @@ yt-dlp
 
 ### Icon Packs
 * https://github.com/vinceliuice/Tela-icon-theme
-* https://github.com/vinceliuice/Colloid-gtk-theme/tree/main/icon-theme
+* https://github.com/vinceliuice/Colloid-icon-theme
 
 ### Wallpaper
 * https://github.com/manishprivet/dynamic-gnome-wallpapers
