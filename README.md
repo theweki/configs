@@ -159,6 +159,10 @@ yt-dlp
 * https://github.com/vinceliuice/Orchis-theme
 * https://github.com/vinceliuice/Graphite-gtk-theme
 
+* Dracula Environment -> [https://draculatheme.com/] -> GTK, ICON all available
+* Arctic Nord Environment -> [https://www.nordtheme.com/ports] -> Theme & Icon Not Available (follow third party)
+
+
 ### Use themes in Flatpaks
 * `sudo flatpak override --filesystem=$HOME/.themes`
 * `sudo flatpak override --env=GTK_THEME=my-theme` 
@@ -173,8 +177,13 @@ yt-dlp
 ### Firefox Theme
 * Install Firefox Gnome theme by: `curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash`
 
-### Starship (terminal theme)
+### Terminal Theme
+* Download FireCode Nerd Font (https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/FiraCode.zip)
 * Configure starship to make your terminal look good (refer https://starship.rs)
+* ZSH Configuration (https://github.com/ohmyzsh/ohmyzsh)
+* zsh-syntax-highlighting (https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#with-a-plugin-manager)
+* zsh-autosuggestion (https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+* powerlevel10k (https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 
 ### Grub Theme
 * https://github.com/vinceliuice/grub2-themes
