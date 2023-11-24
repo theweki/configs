@@ -73,10 +73,10 @@ sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 * `sudo dnf install -y openh264 gstreamer1-plugin-openh264 mozilla-openh264`
 * After this enable the OpenH264 Plugin in Firefox's settings.
 
-## Update Flatpak 
-* `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
-* `flatpak update`
+## Update Flatpak ( https://flatpak.org/setup/Fedora )
+
 * `flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+* `flatpak update`
 
 ## Gnome Extensions
 * Don't install these if you are using a different spin of Fedora.
