@@ -159,7 +159,7 @@ yt-dlp
 * https://github.com/vinceliuice/Orchis-theme
 * https://github.com/vinceliuice/Graphite-gtk-theme
 
-* Dracula Environment -> [https://draculatheme.com/] -> GTK, ICON all available
+* Dracula Environment -> [https://draculatheme.com/] -> GTK, ICON, BROWSER, TERMINAL - all available
 * Arctic Nord Environment -> [https://www.nordtheme.com/ports] -> Theme & Icon Not Available (follow third party)
 
 
