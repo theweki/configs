@@ -1,5 +1,5 @@
- # Fedora 39 Post Install Guide
-Things to do after installing Fedora 39
+ # Fedora Post Install Guide
+Things to do after installing Fedora
 
 ## Faster Updates
 * `sudo nano /etc/dnf/dnf.conf` 
