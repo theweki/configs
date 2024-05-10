@@ -1,6 +1,7 @@
 # Prerequisite
-  SDDM Installed and Enabled
-
+    yay -S sddm
+    systemctl enable sddm.service
+    sudo reboot
 
 yay -S [your-sddm-theme]
 
