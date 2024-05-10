@@ -1,5 +1,6 @@
 # Prerequisite
     yay -S sddm
+    ``Disable all login mangers``
     systemctl enable sddm.service
     sudo reboot
 
