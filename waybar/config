@@ -1,0 +1,37 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 16,
+
+    "include": ["~/dotfiles/waybar/themes/custombar/modules.json"],
+
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "tray",
+        "custom/notification-center",
+
+        "pulseaudio",
+
+        "network",
+
+        "battery",
+        "clock",
+
+        "custom/shutdown"
+    ]
+
+    /*
+        group, custom & (group+custom)
+
+        wlr/taskbar
+    */
+}

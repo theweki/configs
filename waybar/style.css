@@ -1,0 +1,75 @@
+/* 
+@define-color foreground #e0e1f2;
+@define-color background #101325;
+@define-color cursor #e0e1f2;
+
+@define-color color0 #101325;
+@define-color color1 #5561D3;
+@define-color color2 #B063E7;
+@define-color color3 #7782BD;
+@define-color color4 #748FE2;
+@define-color color5 #97A4EC;
+@define-color color6 #BCBFF3;
+@define-color color7 #e0e1f2;
+@define-color color8 #9c9da9;
+@define-color color9 #5561D3;
+@define-color color10 #B063E7;
+@define-color color11 #7782BD;
+@define-color color12 #748FE2;
+@define-color color13 #97A4EC;
+@define-color color14 #BCBFF3;
+@define-color color15 #e0e1f2;
+*/
+
+@import '/home/weki/.cache/wal/colors-waybar.css';
+
+* {
+    font-family: "JetBrainsMonoNL Nerd Font", "Font Awesome 6 Free Solid", Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0;    
+}
+
+window#waybar {
+    background: @background;
+    opacity: 0.9;
+    color: @color7;
+}
+
+.modules-left {
+    padding-left: 16px;
+}
+
+.modules-right {
+    padding-right: 16px;
+}
+
+#waybar .modules-left {
+    padding-right: 8px;
+    /* border-right: @color11 1px solid; */
+}
+
+#waybar .modules-right {
+    padding-left: 12px;
+    border-left: @color11 1px solid;
+}
+
+#workspaces button.active {
+    background: @color13;
+    color: @color0;
+}
+
+#tray {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#pulseaudio {
+    border-left: @color11 1px solid;
+    padding-left: 16px;
+}
+
+#custom-shutdown {
+    background: @color1;
+    color: @color15;
+    padding: 0 8px;
+}
