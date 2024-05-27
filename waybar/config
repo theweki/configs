@@ -1,9 +1,9 @@
 {
     "layer": "top",
     "position": "top",
-    "spacing": 16,
+    "spacing": 12,
 
-    "include": ["~/dotfiles/waybar/themes/custombar/modules.json"],
+    "include": ["~/.config/waybar/modules.json"],
 
     "reload_style_on_change": true,
 
@@ -17,21 +17,24 @@
 
     "modules-right": [
         "tray",
-        "custom/notification-center",
-
         "pulseaudio",
-
-        "network",
-
         "battery",
         "clock",
+        "custom/notification-center",
+        "group/power-menu"
+    ],
 
-        "custom/shutdown"
-    ]
-
-    /*
-        group, custom & (group+custom)
-
-        wlr/taskbar
-    */
+    "group/power-menu": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 200,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/power",
+            "custom/lock",
+            "custom/quit",
+            "custom/reboot"
+        ]
+    }
 }
