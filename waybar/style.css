@@ -1,20 +1,4 @@
-@define-color nord0 #2e3440;
-@define-color nord1 #3b4252;
-@define-color nord2 #434c5e;
-@define-color nord3 #4c566a;
-@define-color nord4 #d8dee9;
-@define-color nord5 #e5e9f0;
-@define-color nord6 #eceff4;
-@define-color nord7 #8fbcbb;
-@define-color nord8 #88c0d0;
-@define-color nord9 #81a1c1;
-@define-color nord10 #5e81ac;
-@define-color nord11 #bf616a;
-@define-color nord12 #d08770;
-@define-color nord13 #ebcb8b;
-@define-color nord14 #a3be8c;
-@define-color nord15 #b48ead;
-
+@import "./themes/mocha.css";
 
 * {
     font-family: "JetBrainsMono Nerd Font";
@@ -23,23 +7,24 @@
 }
 
 window#waybar {
-    background: @nord0;
-    opacity: 0.9;
-    color: @nord7;
+    /* background: @crust; */
+    background-color: transparent;
+    /* opacity: 1; */
+    color: @yellow;
+    
 }
 
 tooltip {
-    border-width: 2px;
-    border-color: @nord11;
-    background-color: @nord1;
+    border: 1px solid @red;
+    background-color: @surface0;
     font-family: "JetBrainsMono Nerd Font";
     border-radius: 8px;
-    margin: 0 12px;
+    margin: 8px 12px 0;
     padding: 0 12px;
 }
 
 tooltip label {
-    color: @nord14;
+    color: @green;
 }
 
 #waybar .modules-left {
@@ -53,58 +38,61 @@ tooltip label {
 }
 
 #workspaces button {
-    background: @nord11;
-    color: @nord0;
+    background: @red;
+    color: @base;
     border-radius: 12px;
     margin-right: 4px;
 }
 
 #workspaces button.active {
-    background: @nord14;
+    background: @green;
 }
 
 #workspaces button:hover {
-    background: @nord10;
-    color: @nord5
+    background: @lavender;
+    color: @crust;
 }
 
 #tray {
+    color: @blue;
     margin: 2px 8px;
+    padding: 0 16px;
     border-radius: 8px;
-    padding: 0 12px;
-    color: @nord12;
-    background: @nord3;
+    border: 1px solid @blue;
 }
 
 #pulseaudio {
     margin: 2px 0;
     border-radius: 8px;
     padding: 0 12px;
-    color: @nord15;
-    background: @nord3;
+    color: @red;
+    border: 1px solid @red;
+    /* background: @base; */
 }
 
 #battery {
     margin: 2px 0;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     padding: 0 12px;
-    color: @nord14;
-    background: @nord3;
+    color: @green;
+    /* border: 1px solid @green; */
+    /* background: @base; */
 }
 
 #clock {
     margin: 2px 8px;
     border-radius: 8px;
+    border: 1px solid @yellow;
     padding: 0 12px;
-    color: @nord13;
-    background: @nord3;
+    color: @yellow;
+    /* background: @base; */
 }
 
 #custom-notification-center {
     margin: 2px;
     border-radius: 12px;
-    background: @nord11;
-    color: @nord4;
+    /* background: @crust; */
+    color: @teal;
 }
 
 #custom-power,
@@ -112,7 +100,8 @@ tooltip label {
 #custom-quit,
 #custom-reboot {
     margin: 2px;
-    border-radius: 12px;
-    background: @nord1;
-    color: @nord12;
+    /* border-radius: 12px; */
+    /* background: @crust; */
+    border-bottom: 1px solid @peach;
+    color: @peach;
 }

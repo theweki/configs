@@ -5,8 +5,8 @@
   "positionY": "top",
   "cssPriority": "user",
   
-  "control-center-width": 400,
-  "control-center-height": 600, 
+  "control-center-width": 500,
+  "control-center-height": 700, 
   "control-center-margin-top": 8,
   "control-center-margin-bottom": 8,
   "control-center-margin-right": 16,
