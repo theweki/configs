@@ -2,8 +2,7 @@
     "battery": {
         "interval": 10,
         "states": {
-            "warning": 35,
-            "critical": 25
+            "critical": 30
         },
         "format": " ",
         "format-discharging": "{icon}",
