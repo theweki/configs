@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DIR="$HOME/Pictures/screenshots"
+DIR="$HOME/Screenshots"
 
 if [ ! -d "$DIR" ]; then
   mkdir -p "$DIR"

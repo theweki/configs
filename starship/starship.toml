@@ -13,9 +13,9 @@ $git_status\
 $line_break$character
 """
 
-palette = 'catppuccin_mocha'
+palette = 'mocha'
 
-[palettes.catppuccin_mocha]
+[palettes.mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
 pink = "#f5c2e7"

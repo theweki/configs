@@ -317,4 +317,4 @@ https://wiki.archlinux.org/title/Blueman
 https://wiki.archlinux.org/title/NetworkManager
 
 # hyprctl & sh scripts
-
+look into `/hypr/scripts/`
