@@ -99,6 +99,24 @@ tooltip label {
     /* background: @base; */
 }
 
+#idle_inhibitor {
+    margin: 2px;
+    /* border-radius: 8px;
+    border: 1px solid @blue; */
+    /* padding: 0 12px; */
+    color: @blue;
+    /* background: @base; */
+}
+
+#idle_inhibitor.activated {
+    margin: 2px;
+    /* border-radius: 8px;
+    border: 1px solid @blue; */
+    /* padding: 0 12px; */
+    color: @green;
+    /* background: @base; */
+}
+
 #custom-notification-center {
     margin: 2px;
     border-radius: 12px;

@@ -21,6 +21,7 @@
         "clock",
         "custom/notification-center",
         "battery",
+        "idle_inhibitor",
         "group/power-menu"
     ],
 
