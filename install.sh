@@ -2,14 +2,24 @@
 
 #archinstall - hyprland desktop installed first
 
-sudo pacman -Syu 
+sudo pacman -Syu
 
-sudo pacman -S git 
+# if installed only xorg-server or minimal desktop
+# sudo pacman -S hyprland polkit xdg-desktop-portal-hyprland qt5-wayland qt6-wayland dunst kitty dolphin wofi
+# sudo pacman -S sddm pipewire networkmanager
+# sudo pacman -S intel-media-driver libva-intel-driver vulkan-intel mesa libva-mesa-driver vulkan-radeon xf86-video-amdgpu xf86-video-ati xf86-video-vmware xf86-video-nouveau
+# sudo pacman -S xorg-server xorg-xinit
+
+sudo pacman -S git
 
 cd ~
 
 #yay
-git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd ~ && rm -rf yay
+git clone https://aur.archlinux.org/yay.git 
+cd yay
+makepkg -si 
+cd ~
+rm -rf yay
 
 #hypr ecosystem
 sudo pacman -S hyprpaper hypridle hyprlock hyprcursor nwg-panel
@@ -35,6 +45,8 @@ sudo pacman -S ttf-jetbrains-mono-nerd font-manager nwg-look qt6-svg qt6-declara
 
 #config
 systemctl enable bluetooth.service
+# systemctl enable NetworkManager.service
+
 chsh -s $(which zsh) $USER
 
 git clone https://github.com/theweki/desktop-environment.git
@@ -63,11 +75,16 @@ cp zsh/.zshrc ~/.config/
 cp starship/starship.toml ~/.config/
 
 sudo cp -r THEMES/mocha-cursors /usr/share/icons/
-sudo cp -r THEMES/mocha-gtk /usr/share/themes
+# sudo cp -r THEMES/mocha-icons /usr/share/icons/
+sudo cp -r THEMES/index.theme  /usr/share/icons/default/
+sudo cp -r THEMES/mocha-gtk /usr/share/themes/
 
-#index.theme cursor and icon theme here copy 
+cd ~
+rm -rf ~/desktop-environment
 
 #archinstall bloat remove
 sudo pacman -Rns dunst kitty dolphin wofi
 
 # MY PACKAGES FOR DEVELOPMENT
+# sudo pacman -S github-cli nodejs npm jdk-openjdk docker
+# and more ...
