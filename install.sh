@@ -14,6 +14,8 @@ sudo pacman -S git
 
 cd ~
 
+# git clone https://github.com/theweki/desktop-environment.git
+
 #yay
 git clone https://aur.archlinux.org/yay.git 
 cd yay
@@ -49,7 +51,6 @@ systemctl enable bluetooth.service
 
 chsh -s $(which zsh) $USER
 
-git clone https://github.com/theweki/desktop-environment.git
 cd desktop-environment
 
 sudo cp grub/grub /etc/default/
@@ -71,7 +72,7 @@ cp -r swaync/ ~/.config/
 
 cp -r waybar/ ~/.config/
 
-cp zsh/.zshrc ~/.config/
+cp zsh/.zshrc ~/
 cp starship/starship.toml ~/.config/
 
 sudo cp -r THEMES/mocha-cursors /usr/share/icons/
