@@ -5,7 +5,15 @@
 sudo pacman -Syu
 
 #archinstall bloat remove
-sudo pacman -Rns dunst kitty dolphin wofi
+sudo pacman -Rns dunst kitty dolphin wofi --noconfirm
+
+sudo pacman -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland --noconfirm
+sudo pacman -S sddm --noconfirm
+sudo pacman -S pipewire networkmanager xorg-server xorg-xinit --noconfirm
+sudo pacman -S intel-media-driver libva-intel-driver vulkan-intel mesa libva-mesa-driver vulkan-radeon xf86-video-amdgpu xf86-video-ati xf86-video-nouveau xf86-video-vmware --noconfirm
+
+systemctl enable sddm.service
+systemctl enable NetworkManager.service
 
 # if installed only xorg-server or minimal desktop
 # sudo pacman -S hyprland polkit xdg-desktop-portal-hyprland qt5-wayland qt6-wayland dunst kitty dolphin wofi
@@ -13,7 +21,7 @@ sudo pacman -Rns dunst kitty dolphin wofi
 # sudo pacman -S intel-media-driver libva-intel-driver vulkan-intel mesa libva-mesa-driver vulkan-radeon xf86-video-amdgpu xf86-video-ati xf86-video-vmware xf86-video-nouveau
 # sudo pacman -S xorg-server xorg-xinit
 
-sudo pacman -S git
+sudo pacman -S git --noconfirm
 
 cd ~
 
@@ -27,26 +35,26 @@ cd ~
 rm -rf yay
 
 #hypr ecosystem
-sudo pacman -S hyprpaper hypridle hyprlock hyprcursor nwg-panel
-sudo pacman -S alacritty firefox thunar 
+sudo pacman -S hyprpaper hypridle hyprlock hyprcursor nwg-panel --noconfirm
+sudo pacman -S alacritty firefox thunar --noconfirm
 
 # shell
-sudo pacman -S zsh
+sudo pacman -S zsh --noconfirm
 
 #utilities
-sudo pacman -S swaync polkit-gnome rofi-wayland waybar cliphist unzip mpv
+sudo pacman -S swaync polkit-gnome rofi-wayland waybar cliphist unzip mpv --noconfirm
 
 #bluetooth
-sudo pacman -S blueman
+sudo pacman -S blueman --noconfirm
 
 #network
-sudo pacman -S network-manager-applet
+sudo pacman -S network-manager-applet --noconfirm
 
 #media
-sudo pacman -S pavucontrol
+sudo pacman -S pavucontrol --noconfirm
 
 #theme
-sudo pacman -S ttf-jetbrains-mono-nerd font-manager nwg-look qt6-svg qt6-declarative starship
+sudo pacman -S ttf-jetbrains-mono-nerd font-manager nwg-look qt6-svg qt6-declarative starship --noconfirm
 
 #config
 systemctl enable bluetooth.service
