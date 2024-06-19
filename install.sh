@@ -4,6 +4,9 @@
 
 sudo pacman -Syu
 
+#archinstall bloat remove
+sudo pacman -Rns dunst kitty dolphin wofi
+
 # if installed only xorg-server or minimal desktop
 # sudo pacman -S hyprland polkit xdg-desktop-portal-hyprland qt5-wayland qt6-wayland dunst kitty dolphin wofi
 # sudo pacman -S sddm pipewire networkmanager
@@ -82,9 +85,6 @@ sudo cp -r THEMES/mocha-gtk /usr/share/themes/
 
 cd ~
 rm -rf ~/desktop-environment
-
-#archinstall bloat remove
-sudo pacman -Rns dunst kitty dolphin wofi
 
 # MY PACKAGES FOR DEVELOPMENT
 # sudo pacman -S github-cli nodejs npm jdk-openjdk docker
