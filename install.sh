@@ -2,11 +2,16 @@
 
 username=weki
 
-pacman -Syu
+pacman -Sy
 
-pacman -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland --noconfirm
-pacman -S sddm --noconfirm
+pacman --noconfirm -S hyprland xdg-desktop-portal-hyprland qt5-wayland qt6-wayland
+pacman --noconfirm -S hyprpaper hypridle hyprlock hyprcursor nwg-panel
+pacman --noconfirm -S alacritty firefox thunar
+pacman --noconfirm -S zsh
+pacman --noconfirm -S swaync polkit-gnome rofi-wayland waybar cliphist unzip mpv
+pacman --noconfirm -S ttf-jetbrains-mono-nerd font-manager nwg-look qt6-svg qt6-declarative starship
 
+pacman -S sddm
 systemctl enable sddm.service
 
 cd ~
@@ -27,18 +32,6 @@ pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.
 echo -e "[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | tee -a /etc/pacman.conf
 pacman -Sy
 
-#hypr ecosystem
-sudo pacman -S hyprpaper hypridle hyprlock hyprcursor nwg-panel --noconfirm
-sudo pacman -S alacritty firefox thunar --noconfirm
-
-# shell
-sudo pacman -S zsh --noconfirm
-
-#utilities
-sudo pacman -S swaync polkit-gnome rofi-wayland waybar cliphist unzip mpv --noconfirm
-
-#theme
-sudo pacman -S ttf-jetbrains-mono-nerd font-manager nwg-look qt6-svg qt6-declarative starship --noconfirm
 
 chsh -s $(which zsh) $username
 
