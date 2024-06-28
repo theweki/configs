@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-cp grub/grub /etc/default/
-cp -r grub/mocha-grub-theme/ /usr/share/grub/themes/
-grub-mkconfig -o /boot/grub/grub.cfg
+sudo cp grub/grub /etc/default/
+sudo cp -r grub/mocha-grub-theme/ /usr/share/grub/themes/
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-cp sddm/sddm.conf /etc/
-cp -r sddm/mocha/ /usr/share/sddm/themes/
+sudo cp sddm/sddm.conf /etc/
+sudo cp -r sddm/mocha/ /usr/share/sddm/themes/
 
 cp -r backgrounds/ ~/
 
@@ -22,7 +22,7 @@ cp -r waybar/ ~/.config/
 cp zsh/.zshrc ~/
 cp starship/starship.toml ~/.config/
 
-cp -r THEMES/mocha-cursors /usr/share/icons/
+sudo cp -r THEMES/mocha-cursors /usr/share/icons/
 # cp -r THEMES/mocha-icons /usr/share/icons/
-cp -r THEMES/index.theme  /usr/share/icons/default/
-cp -r THEMES/mocha-gtk /usr/share/themes/
+sudo cp -r THEMES/index.theme  /usr/share/icons/default/
+sudo cp -r THEMES/mocha-gtk /usr/share/themes/
