@@ -1,34 +1,13 @@
 #!/usr/bin/env bash
 
-sudo cp grub/grub /etc/default/
-sudo cp -r grub/mocha-grub-theme/ /usr/share/grub/themes/
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+./config.sh
 
-sudo cp sddm/sddm.conf /etc/
-sudo cp -r sddm/mocha/ /usr/share/sddm/themes/
+sleep 1
 
-cp -r backgrounds/ ~/
+./yay.sh
 
-cp -r hypr/ ~/.config/
+sleep 1
 
-cp -r alacritty/ ~/.config/
+./utilities.sh
 
-cp -r rofi/ ~/.config/
-
-cp -r swaync/ ~/.config/
-
-cp -r waybar/ ~/.config/
-
-cp zsh/.zshrc ~/
-cp starship/starship.toml ~/.config/
-
-sudo cp -r THEMES/mocha-cursors /usr/share/icons/
-# cp -r THEMES/mocha-icons /usr/share/icons/
-sudo cp -r THEMES/index.theme  /usr/share/icons/default/
-sudo cp -r THEMES/mocha-gtk /usr/share/themes/
-
-# hyprland remove bloat
-sudo pacman --noconfirm -Rns kitty
-sudo pacman --noconfirm -Rns dolphin
-sudo pacman --noconfirm -Rns dunst
-sudo pacman --noconfirm -Rns wofi
+sleep 1
