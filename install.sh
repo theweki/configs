@@ -28,4 +28,7 @@ sudo cp -r THEMES/index.theme  /usr/share/icons/default/
 sudo cp -r THEMES/mocha-gtk /usr/share/themes/
 
 # hyprland remove bloat
-sudo pacman --noconfirm -Rns kitty dolphin dunst wofi
+sudo pacman --noconfirm -Rns kitty
+sudo pacman --noconfirm -Rns dolphin
+sudo pacman --noconfirm -Rns dunst
+sudo pacman --noconfirm -Rns wofi
