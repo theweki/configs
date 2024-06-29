@@ -26,3 +26,6 @@ sudo cp -r THEMES/mocha-cursors /usr/share/icons/
 # cp -r THEMES/mocha-icons /usr/share/icons/
 sudo cp -r THEMES/index.theme  /usr/share/icons/default/
 sudo cp -r THEMES/mocha-gtk /usr/share/themes/
+
+# hyprland remove bloat
+sudo pacman --noconfirm -Rns kitty dolphin dunst wofi
