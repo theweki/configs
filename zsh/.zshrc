@@ -10,5 +10,4 @@ prompt redhat
 
 zstyle ':completion:*' menu select
 
-# Starship Initialization
-eval "$(starship init zsh)"
+alias ls="ls --color -a -l"
