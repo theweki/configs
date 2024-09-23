@@ -7,7 +7,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo cp sddm/sddm.conf /etc/
 sudo cp -r sddm/mocha/ /usr/share/sddm/themes/
 
-sudo cp reflector.conf /etc/xdg/reflector/
+sudo cp reflector/reflector.conf /etc/xdg/reflector/
 
 cp -r backgrounds/ ~/
 
